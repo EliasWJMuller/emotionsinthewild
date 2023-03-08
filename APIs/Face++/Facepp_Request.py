@@ -40,14 +40,14 @@ import pandas as pd
 import sklearn.preprocessing
 
 #constants to be defined
-WDIR = '/Users/eliasmuller/Library/CloudStorage/OneDrive-UniversitätSt.Gallen/02 Bachelorarbeit/'
-IMAGES_FOLDER = '04 AffectNet/01 Python Sample/'
-FACEPP_FER = '04 AffectNet/03 API Outputs/Facepp_FER.csv'
-FACEPP_JSON = '04 AffectNet/03 API Outputs/Facepp_JSON.csv'
-FACEPP_NOTDETECTED = '04 AffectNet/03 API Outputs/FacePP_Not_detected.csv'
-FACEPP_OHE = '04 AffectNet/03 API Outputs/FacePP_One_Hot_Encoded.csv'
-FACEPP_KEY = 'kgA_bpgagiJSM8zcbOHNsu58ajxbMeEX'
-FACEPP_SECRET = 'jUZxW95xgn21jrTQ5kyOeOXikvVzpAK_'
+WDIR = 'WDIR'
+IMAGES_FOLDER = 'PATH_TO_IMAGES'
+FACEPP_FER = 'PATH_TO_FILE'
+FACEPP_JSON = 'PATH_TO_FILE'
+FACEPP_NOTDETECTED = 'PATH_TO_FILE'
+FACEPP_OHE = 'PATH_TO_FILE'
+FACEPP_KEY = 'FACEPP_KEY'
+FACEPP_SECRET = 'FACEPP_SECRET'
 
 # DO NOT MODIFY
 API_URL = 'https://api-us.faceplusplus.com/facepp/v3/detect'
