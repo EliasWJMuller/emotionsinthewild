@@ -11,10 +11,10 @@ Note:
 import sklearn.preprocessing
 import pandas as pd
 # import the raw data
-raw_fer = pd.read_csv('04 AffectNet/03 API Outputs/05 Face++/Facepp_FER.csv', index_col=0)
+raw_fer = pd.read_csv('PATH_TO_FILE', index_col=0)
 # filter out results where Google Vision did not detect a face
 not_detected = raw_fer.loc[raw_fer['anger'] == 'no face detected']
-not_detected.to_csv('04 AffectNet/03 API Outputs/05 Face++/FacePP_Not_detected.csv')
+not_detected.to_csv('PATH_TO_FILE')
 # drop 'no face detected' before one hot encoding
 raw_fer = raw_fer[raw_fer['anger'] != 'no face detected']
 
@@ -35,4 +35,4 @@ raw_t.iloc[1:,:][raw_t.iloc[1:,:] != 0] = 1
 encoded = raw_t.T
 
 # safte the file to csv
-encoded.to_csv('04 AffectNet/03 API Outputs/05 Face++/FacePP_One_Hot_Encoded.csv')
+encoded.to_csv('PATH_TO_FILE')
