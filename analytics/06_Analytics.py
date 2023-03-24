@@ -24,7 +24,7 @@ import csv
 import matplotlib.pyplot as plt
 
 
-WDIR = 'PATH_TO_WDIR
+WDIR = 'PATH_TO_WDIR'
 FILE_PATH = 'PATH_TO_SAVE'
 
 
