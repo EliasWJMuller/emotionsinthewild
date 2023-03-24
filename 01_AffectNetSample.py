@@ -21,18 +21,8 @@ constants to be definded:
     AWS_One_Hot_Encoded == One hot encoded output
 
 PREREQUISITES:
-    1. Access to data set (here: AffectNet)
+    1. Access to data set (here: http://mohammadmahoor.com/affectnet/)
 """
-
-# =============================================================================
-# AFFECTNET CLEANING AND SAMPLING
-# This code block cleans the data set in order to filter out unwanted pictures.
-# In the case of this analysis all "Neutral" are excluded as only the distinct
-# emotions are relevant. Further, a sample of a 1000 pictures is randomly
-# created. This sample retains the original proportion of each emotion in
-# the original complete data set.
-# =============================================================================
-# Define overarching class
 # importing necessary libraries$
 
 import os
