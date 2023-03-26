@@ -15,7 +15,7 @@ PREREQUISITES:
     2. Majority vote completed (07_Majority_Vote.py)
 
 """
-
+#import required libraries
 import os
 import pandas as pd
 import numpy as np
@@ -23,7 +23,7 @@ import sklearn.metrics
 import csv
 import matplotlib.pyplot as plt
 
-
+#set constants
 WDIR = 'PATH_TO_WDIR'
 FILE_PATH = 'PATH_TO_SAVE'
 
@@ -47,7 +47,7 @@ FPP_ohe = pd.read_csv('PATH_TO_OHE_FILE', index_col=0)
 M_vote = pd.read_csv('PATH_TO_OHE_FILE')
 
 
-#modify all the indexes to align 
+#modify all dfs to match indices
 df_list = [Sample_ohe, AWS_ohe, Google_ohe, SB_ohe, FPP_ohe]
 for df in df_list: 
     df.iloc[:,0] = df.iloc[:,0].str.replace('.jpg', '')
@@ -87,11 +87,12 @@ class Analytics(object):
         self.conf_matrix_df = pd.DataFrame(conf_matrix, columns = labels, index = labels)
 
     def add_matrix_totals(self):
-	# add the total columns
+		# add the total columns
         self.conf_matrix_df['sample total'] = self.conf_matrix_df.sum(axis =1)
         self.conf_matrix_df.loc['prediction total',:] = self.conf_matrix_df.sum(numeric_only=True, axis=0)
 
     def confusion_matrix(self, col_labels = None, row_labels = None, mode = ''):
+    	# generates all the confusion matrices and the corresponding metrics
         print(self.provider)
         if col_labels == None: 
             col_labels = ['happy', 'sad', 'surprise', 'fear', 'disgust', 'anger',
@@ -158,6 +159,7 @@ class Analytics(object):
         return self.conf_matrix_df, analytics_matrix
     
     def statistics_dict(self, fp, fn, tp, tn, p, n, pp, pn):
+        # method comouting the metrics for given input data
         p1 = (tp+fn)/(tp+fp+tn+fn)
         p2 = (tp+fp)/(tp+fp+tn+fn)
         random_accuracy = (p1*p2)+(1-p1)*(1-p2) 
