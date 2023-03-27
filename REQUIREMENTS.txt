@@ -8,4 +8,4 @@ sklearn == 1.2.1
 future == 0.18.3
 google == 2.82.0
 scipy == 1.10.1
-face_client.multipart #deprecated: to be modified according to file 05
+face_client.multipart #deprecated: to be modified according to file 03
