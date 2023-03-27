@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""06_Majority_Vote.py
+"""07_Majority_Vote.py
 
 This .py file instantiates and optimises the majority vote of the four APIs as outlined in the 
 Main paper. 
