@@ -1,25 +1,11 @@
-import os
-import os.path
-import random
-import shutil
-import time
-import boto3
-import json
-import requests
-import urllib
-import base64
-import csv
-
-from collections import Counter
-from sklearn.preprocessing import OneHotEncoder
-from future.utils import iteritems
-from face_client import multipart #deprecated: to be modified according to 05
-from google.cloud import vision
-from sklearn.metrics import f1_score
-from sklearn.metrics import mean_squared_error
-from sklearn.metrics import cohen_kappa_score, confusion_matrix
-from scipy.optimize import minimize
-
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
+python == 3.11.2
+numpy == 1.24.2
+pandas == 1.5.3
+matplotlib == 3.7.0
+boto3 == 1.26.99
+requests == 2.7.0
+sklearn == 1.2.1
+future == 0.18.3
+google == 2.82.0
+scipy == 1.10.1
+face_client.multipart #deprecated: to be modified according to file 05
