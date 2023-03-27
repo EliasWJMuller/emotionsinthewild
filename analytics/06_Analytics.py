@@ -12,7 +12,7 @@ constants to be definded:
 
 PREREQUISITES:
     1. All requests success for the four APIs
-    2. Majority vote completed (07_Majority_Vote.py)
+    2. Note that this code has been prepared with the Majority vote completed (07_Majority_Vote.py).
 
 """
 #import required libraries
