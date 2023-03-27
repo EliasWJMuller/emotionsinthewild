@@ -6,7 +6,7 @@ Note: in order to reproduce the results, access to the different APIs and the Af
 
 Instructions: 
 
-Files to be used: 
+Files to be used
 - 01 for the data sample generation
 - 02 to 05 for API requests
 - 06 for analytics
