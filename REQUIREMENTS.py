@@ -13,7 +13,7 @@ import csv
 from collections import Counter
 from sklearn.preprocessing import OneHotEncoder
 from future.utils import iteritems
-from face_client import multipart
+from face_client import multipart #deprecated: to be modified according to 05
 from google.cloud import vision
 from sklearn.metrics import f1_score
 from sklearn.metrics import mean_squared_error
