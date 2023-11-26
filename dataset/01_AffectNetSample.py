@@ -14,12 +14,6 @@ constants to be definded:
 @SAMPLE_SIZE: sample size
 @PATH_SAMPLE_FOLDER: Path to folder with images to be processed
 
-
-@output: .csv files
-    Amazon_FER == two most likely emotions with corresponding confidence for each image
-    Amazon_JSON == raw json ouput for each image
-    AWS_One_Hot_Encoded == One hot encoded output
-
 PREREQUISITES:
     1. Access to data set (here: http://mohammadmahoor.com/affectnet/)
 """
